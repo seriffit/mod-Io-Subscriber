@@ -9,8 +9,8 @@ async function getModsInJsonData(url, options) {
 }
 
 async function subscribeToIds(arrayOfIds, options, gameId) {
-  arrayOfIds.forEach(function (id) {
-    subscribeToId(id, options, gameId);
+  arrayOfIds.forEach(async function (id) {
+    await subscribeToId(id, options, gameId);
   });
 }
 
@@ -29,6 +29,11 @@ async function subscribeToFriendsMods() {
   const bearerToken = document.getElementById("friendInput").value;
   const gameId = document.getElementById("gameId").value;
   const getUrl = "https://api.mod.io/v1/me/subscribed";
+
+  const statusElement= document.getElementById("status");
+
+  statusElement.textContent = "Loading... If it takes a long time, check console for errors.";
+
   const getOptions = {
     method: "GET",
     headers: {
@@ -54,7 +59,9 @@ async function subscribeToFriendsMods() {
     }
   });
 
-  subscribeToIds(modIds, subOptions, gameId);
+  await subscribeToIds(modIds, subOptions, gameId);
 
   console.log(modIds);
+
+  statusElement.textContent = "Done! Congrats!";
 }
