@@ -14,3 +14,19 @@ More info about Mod.io API https://docs.mod.io/#getting-started
 
 
 This is a work in progress...
+
+
+Prerequisite
+
+- You and your friend need to have a created Oauth token from Mod.Io user settings
+- Extract both getMods.js and index.html in a same folder
+
+How to use
+- Open index.html with your browser
+- Insert your own Oauth token to the input field "Your own token"
+- Insert your friends token (which subscribed you will be subscribing) to the input field "Your friends token"
+- Insert gameId in the input field "Game Id" Ready or not gameid is 3791. You can use other game ids if you know the games gameid in mod.io!
+- Click the button
+After clicking the button your mod.io account has subscribed to all the mods your friend has subscribed in that particular game.
+
+
