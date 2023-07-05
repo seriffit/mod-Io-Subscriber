@@ -24,7 +24,7 @@ async function subscribeToId(id, options, gameId) {
 }
 
 ///Starts here
-async function subscibeToFriendsMods() {
+async function subscribeToFriendsMods() {
   const subBearerToken = document.getElementById("yourInput").value;
   const bearerToken = document.getElementById("friendInput").value;
   const gameId = document.getElementById("gameId").value;
