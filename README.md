@@ -11,3 +11,6 @@ You and your friend both need to create your own Oauth Token in the Mod.Io.
 More info about Mod.io API https://docs.mod.io/#getting-started
 
 😐 <b>DO NOT SHARE YOUR OAUTH TOKEN TO ANYONE YOU CAN'T TRUST</b> 😐
+
+
+This is a work in progress...
