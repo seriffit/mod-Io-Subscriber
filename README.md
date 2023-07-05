@@ -4,7 +4,7 @@ This uses your own Oauth token and your friends Oauth token. Your friends Oauth 
 
 After clicking the button, you can double check from mod.io that all your friends subscribed mods have been subscribed to you also.
 
-Browsers console also gives you more information, in case of any errors!
+Browsers console (F12) also gives you more information, in case of any errors!
 
 You and your friend both need to create your own Oauth Token in the Mod.Io.
 
