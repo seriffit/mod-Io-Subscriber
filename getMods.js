@@ -1,4 +1,4 @@
-"use strict"
+"use strict";
 const acceptHeader = "application/json";
 
 async function getModsInJsonData(url, options) {
@@ -49,7 +49,9 @@ async function subscibeToFriendsMods() {
   const jsonResponse = await getModsInJsonData(getUrl, getOptions);
 
   const modIds = jsonResponse.data.map(function (data) {
-    return data.id;
+    if (data.game_id == gameId) {
+      return data.id;
+    }
   });
 
   subscribeToIds(modIds, subOptions, gameId);

@@ -7,4 +7,5 @@ After clicking the button, you can double check from mod.io that all your friend
 Browsers console also gives you more information, in case of any errors!
 
 You and your friend both need to create your own Oauth Token in the Mod.Io.
+
 <b>DO NOT SHARE YOUR OAUTH TOKEN TO ANYONE YOU CAN'T TRUST</b>
