@@ -17,7 +17,7 @@ This is a work in progress...
 
 
 Prerequisite
-- Download the latest release from here https://github.com/seriffit/mod-Io-Subscriber/releases/latest
+- Download the latest release from here https://github.com/seriffit/mod-Io-Subscriber/releases/latest (Or use this https://seriffit.github.io/mod-Io-Subscriber/)
 - You and your friend need to have a created Oauth token from Mod.Io user settings
 - Extract both getMods.js and index.html in a same folder
 
