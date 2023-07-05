@@ -9,7 +9,7 @@ async function getModsInJsonData(url, options) {
 }
 
 async function subscribeToIds(arrayOfIds, options, gameId) {
-  arrayOfIds.forEach(function (id) {
+  arrayOfIds.forEach(async function (id) {
     await subscribeToId(id, options, gameId);
   });
 }
@@ -32,7 +32,7 @@ async function subscribeToFriendsMods() {
 
   const statusElement= document.getElementById("status");
 
-  statusElement.textContent = "Loading...";
+  statusElement.textContent = "Loading... If it takes a long time, check console for errors.";
 
   const getOptions = {
     method: "GET",
