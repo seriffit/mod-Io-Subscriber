@@ -4,7 +4,7 @@ const acceptHeader = "application/json";
 async function getModsInJsonData(url, options) {
   const response = await fetch(url, options);
   const jsonResponse = await response.json();
-  console.log("Yhteensä tämän verran modeja: " + jsonResponse.result_total);
+  console.log("Summary count of mods to subscribe: " + jsonResponse.result_total);
   return jsonResponse;
 }
 
